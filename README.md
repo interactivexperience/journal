@@ -25,12 +25,12 @@ Press-Effekte. Zeiten/Kurven sind iOS-übliche Richtwerte, nicht von Apple gemes
 ## Grenzen (ehrlich)
 - Kein System ist „hackersicher“. Schutz = Passwortstärke + Gerätesperre. Passwort vergessen = Daten weg.
 - Wer die Hosting-Seite kontrolliert, könnte beim nächsten Laden manipulierten Code ausliefern. Deshalb: **privates Repo,
-  2-Faktor-Anmeldung, Zugriff auf Hosting klein halten.** (HTTP-Header wie `frame-ancestors` setzt GitHub Pages nicht.)
+  2-Faktor-Anmeldung, Zugriff auf Hosting klein halten.** (HTTP-Header wie `frame-ancestors` setzt GitHub Pages nicht; die Datei `_headers` setzt sie auf Netlify/Cloudflare Pages.)
 - Der Hosting-Anbieter sieht beim Laden die IP-Adresse, nie die Daten.
 - Rein private Nutzung fällt unter die Haushaltsausnahme der DSGVO (Art. 2 Abs. 2 c); das ist keine Rechtsberatung.
 
 ## Installieren (iPhone)
-1. Dateien per HTTPS bereitstellen (z. B. GitHub Pages eines **privaten** Repos).
+1. Dateien per HTTPS bereitstellen, empfohlen Netlify Drop oder Cloudflare Pages (liefern `_headers` aus). Hochladen: nur `index.html`, `app.js`, `app.css`, `sw.js`, `manifest.webmanifest`, Icons und `_headers`.
 2. In Safari öffnen → Teilen → „Zum Home-Bildschirm“ (nur so schützt iOS die Daten vor automatischem Löschen).
 3. Passwort festlegen, Kind anlegen. Regelmäßig: Einstellungen → Backup → in Dateien/pCloud sichern.
 
